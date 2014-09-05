@@ -9,8 +9,8 @@
 extern NSString* const IGYouTubeExtractorErrorDomain;
 
 typedef NS_ENUM (NSUInteger, IGYouTubeExtractorAttemptType) {
-	IGYouTubeExtractorAttemptTypeEmbedded = 0,
-	IGYouTubeExtractorAttemptTypeDetailPage,
+    IGYouTubeExtractorAttemptTypeEmbedded = 0,
+    IGYouTubeExtractorAttemptTypeDetailPage,
     IGYouTubeExtractorAttemptTypeVevo,
     IGYouTubeExtractorAttemptTypeBlank,
     IGYouTubeExtractorAttemptTypeError
@@ -18,7 +18,7 @@ typedef NS_ENUM (NSUInteger, IGYouTubeExtractorAttemptType) {
 
 typedef NS_ENUM (NSUInteger, IGYouTubeExtractorVideoQuality) {
     IGYouTubeExtractorVideoQualityUnknown   = 0,
-	IGYouTubeExtractorVideoQualitySmall240  = 36,
+    IGYouTubeExtractorVideoQualitySmall240  = 36,
 	IGYouTubeExtractorVideoQualityMedium360 = 18,
 	IGYouTubeExtractorVideoQualityHD720     = 22,
 	IGYouTubeExtractorVideoQualityHD1080    = 37,
