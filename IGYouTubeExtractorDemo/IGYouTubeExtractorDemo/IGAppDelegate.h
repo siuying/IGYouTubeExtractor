@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 The App Boutique. All rights reserved.
 //
 
-@interface RMAppDelegate : UIResponder <UIApplicationDelegate>
+@interface IGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5430666319B98E1400C3F444 /* IGYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5430666219B98E1400C3F444 /* IGYouTubeExtractor.m */; };
+		5430666819B98E2300C3F444 /* IGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5430666519B98E2300C3F444 /* IGAppDelegate.m */; };
+		5430666919B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5430666719B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.m */; };
+		5430666B19B98E3100C3F444 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5430666A19B98E3100C3F444 /* Images.xcassets */; };
+		5430666F19B98E3F00C3F444 /* IGYouTubeExtractorDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5430666C19B98E3F00C3F444 /* IGYouTubeExtractorDemo-Info.plist */; };
+		5430667019B98E3F00C3F444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5430666E19B98E3F00C3F444 /* main.m */; };
+		5430667419B98E4C00C3F444 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5430667219B98E4C00C3F444 /* InfoPlist.strings */; };
+		5430667919B98E6400C3F444 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5430667719B98E6400C3F444 /* InfoPlist.strings */; };
+		5430667A19B98E6600C3F444 /* IGYouTubeExtractorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5430667519B98E5C00C3F444 /* IGYouTubeExtractorDemoTests.m */; };
+		5430667C19B98E6F00C3F444 /* IGYouTubeExtractorDemoTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5430667B19B98E6F00C3F444 /* IGYouTubeExtractorDemoTests-Info.plist */; };
 		90A6A041190C3A6C0086D4CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6A040190C3A6C0086D4CF /* Foundation.framework */; };
 		90A6A043190C3A6C0086D4CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6A042190C3A6C0086D4CF /* CoreGraphics.framework */; };
 		90A6A045190C3A6C0086D4CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6A044190C3A6C0086D4CF /* UIKit.framework */; };
-		90A6A04B190C3A6C0086D4CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90A6A049190C3A6C0086D4CF /* InfoPlist.strings */; };
-		90A6A04D190C3A6C0086D4CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A6A04C190C3A6C0086D4CF /* main.m */; };
-		90A6A051190C3A6C0086D4CF /* RMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A6A050190C3A6C0086D4CF /* RMAppDelegate.m */; };
-		90A6A053190C3A6C0086D4CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A6A052190C3A6C0086D4CF /* Images.xcassets */; };
 		90A6A05A190C3A6C0086D4CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6A059190C3A6C0086D4CF /* XCTest.framework */; };
 		90A6A05B190C3A6C0086D4CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6A040190C3A6C0086D4CF /* Foundation.framework */; };
 		90A6A05C190C3A6C0086D4CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6A044190C3A6C0086D4CF /* UIKit.framework */; };
-		90A6A064190C3A6C0086D4CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90A6A062190C3A6C0086D4CF /* InfoPlist.strings */; };
-		90A6A066190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A6A065190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests.m */; };
-		90A6A072190C3A800086D4CF /* RMYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A6A071190C3A800086D4CF /* RMYouTubeExtractor.m */; };
-		90A6A075190C3ED10086D4CF /* RMYouTubeExtractorDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A6A074190C3ED10086D4CF /* RMYouTubeExtractorDemoTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,26 +36,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		90A6A03D190C3A6C0086D4CF /* RMYouTubeExtractorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMYouTubeExtractorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5430666119B98E1400C3F444 /* IGYouTubeExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGYouTubeExtractor.h; path = ../IGYouTubeExtractor/IGYouTubeExtractor.h; sourceTree = "<group>"; };
+		5430666219B98E1400C3F444 /* IGYouTubeExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGYouTubeExtractor.m; path = ../IGYouTubeExtractor/IGYouTubeExtractor.m; sourceTree = "<group>"; };
+		5430666419B98E2300C3F444 /* IGAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGAppDelegate.h; path = IGYouTubeExtractorDemo/IGAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		5430666519B98E2300C3F444 /* IGAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGAppDelegate.m; path = IGYouTubeExtractorDemo/IGAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		5430666619B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMYouTubeExtractorDemoTableViewController.h; path = IGYouTubeExtractorDemo/RMYouTubeExtractorDemoTableViewController.h; sourceTree = SOURCE_ROOT; };
+		5430666719B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMYouTubeExtractorDemoTableViewController.m; path = IGYouTubeExtractorDemo/RMYouTubeExtractorDemoTableViewController.m; sourceTree = SOURCE_ROOT; };
+		5430666A19B98E3100C3F444 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IGYouTubeExtractorDemo/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		5430666C19B98E3F00C3F444 /* IGYouTubeExtractorDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "IGYouTubeExtractorDemo-Info.plist"; path = "IGYouTubeExtractorDemo/IGYouTubeExtractorDemo-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5430666D19B98E3F00C3F444 /* IGYouTubeExtractorDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IGYouTubeExtractorDemo-Prefix.pch"; path = "IGYouTubeExtractorDemo/IGYouTubeExtractorDemo-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		5430666E19B98E3F00C3F444 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IGYouTubeExtractorDemo/main.m; sourceTree = SOURCE_ROOT; };
+		5430667319B98E4C00C3F444 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = IGYouTubeExtractorDemo/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		5430667519B98E5C00C3F444 /* IGYouTubeExtractorDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGYouTubeExtractorDemoTests.m; path = IGYouTubeExtractorDemoTests/IGYouTubeExtractorDemoTests.m; sourceTree = SOURCE_ROOT; };
+		5430667819B98E6400C3F444 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = IGYouTubeExtractorDemoTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		5430667B19B98E6F00C3F444 /* IGYouTubeExtractorDemoTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "IGYouTubeExtractorDemoTests-Info.plist"; path = "IGYouTubeExtractorDemoTests/IGYouTubeExtractorDemoTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		90A6A03D190C3A6C0086D4CF /* IGYouTubeExtractorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGYouTubeExtractorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A6A040190C3A6C0086D4CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90A6A042190C3A6C0086D4CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		90A6A044190C3A6C0086D4CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		90A6A048190C3A6C0086D4CF /* RMYouTubeExtractorDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMYouTubeExtractorDemo-Info.plist"; sourceTree = "<group>"; };
-		90A6A04A190C3A6C0086D4CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		90A6A04C190C3A6C0086D4CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		90A6A04E190C3A6C0086D4CF /* RMYouTubeExtractorDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMYouTubeExtractorDemo-Prefix.pch"; sourceTree = "<group>"; };
-		90A6A04F190C3A6C0086D4CF /* RMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMAppDelegate.h; sourceTree = "<group>"; };
-		90A6A050190C3A6C0086D4CF /* RMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAppDelegate.m; sourceTree = "<group>"; };
-		90A6A052190C3A6C0086D4CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		90A6A058190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMYouTubeExtractorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90A6A058190C3A6C0086D4CF /* IGYouTubeExtractorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGYouTubeExtractorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A6A059190C3A6C0086D4CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		90A6A061190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMYouTubeExtractorDemoTests-Info.plist"; sourceTree = "<group>"; };
-		90A6A063190C3A6C0086D4CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		90A6A065190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMYouTubeExtractorDemoTests.m; sourceTree = "<group>"; };
-		90A6A070190C3A800086D4CF /* RMYouTubeExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMYouTubeExtractor.h; sourceTree = "<group>"; };
-		90A6A071190C3A800086D4CF /* RMYouTubeExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMYouTubeExtractor.m; sourceTree = "<group>"; };
-		90A6A073190C3ED10086D4CF /* RMYouTubeExtractorDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMYouTubeExtractorDemoTableViewController.h; sourceTree = "<group>"; };
-		90A6A074190C3ED10086D4CF /* RMYouTubeExtractorDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMYouTubeExtractorDemoTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +85,8 @@
 		90A6A034190C3A6C0086D4CF = {
 			isa = PBXGroup;
 			children = (
-				90A6A046190C3A6C0086D4CF /* RMYouTubeExtractorDemo */,
-				90A6A05F190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests */,
+				90A6A046190C3A6C0086D4CF /* IGYouTubeExtractorDemo */,
+				90A6A05F190C3A6C0086D4CF /* IGYouTubeExtractorDemoTests */,
 				90A6A03F190C3A6C0086D4CF /* Frameworks */,
 				90A6A03E190C3A6C0086D4CF /* Products */,
 			);
@@ -93,8 +95,8 @@
 		90A6A03E190C3A6C0086D4CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90A6A03D190C3A6C0086D4CF /* RMYouTubeExtractorDemo.app */,
-				90A6A058190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests.xctest */,
+				90A6A03D190C3A6C0086D4CF /* IGYouTubeExtractorDemo.app */,
+				90A6A058190C3A6C0086D4CF /* IGYouTubeExtractorDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,65 +112,67 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		90A6A046190C3A6C0086D4CF /* RMYouTubeExtractorDemo */ = {
+		90A6A046190C3A6C0086D4CF /* IGYouTubeExtractorDemo */ = {
 			isa = PBXGroup;
 			children = (
-				90A6A06F190C3A800086D4CF /* RMYouTubeExtractor */,
-				90A6A04F190C3A6C0086D4CF /* RMAppDelegate.h */,
-				90A6A050190C3A6C0086D4CF /* RMAppDelegate.m */,
-				90A6A073190C3ED10086D4CF /* RMYouTubeExtractorDemoTableViewController.h */,
-				90A6A074190C3ED10086D4CF /* RMYouTubeExtractorDemoTableViewController.m */,
-				90A6A052190C3A6C0086D4CF /* Images.xcassets */,
+				90A6A06F190C3A800086D4CF /* IGYouTubeExtractor */,
+				5430666419B98E2300C3F444 /* IGAppDelegate.h */,
+				5430666519B98E2300C3F444 /* IGAppDelegate.m */,
+				5430666619B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.h */,
+				5430666719B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.m */,
+				5430666A19B98E3100C3F444 /* Images.xcassets */,
 				90A6A047190C3A6C0086D4CF /* Supporting Files */,
 			);
+			name = IGYouTubeExtractorDemo;
 			path = RMYouTubeExtractorDemo;
 			sourceTree = "<group>";
 		};
 		90A6A047190C3A6C0086D4CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				90A6A048190C3A6C0086D4CF /* RMYouTubeExtractorDemo-Info.plist */,
-				90A6A049190C3A6C0086D4CF /* InfoPlist.strings */,
-				90A6A04C190C3A6C0086D4CF /* main.m */,
-				90A6A04E190C3A6C0086D4CF /* RMYouTubeExtractorDemo-Prefix.pch */,
+				5430667219B98E4C00C3F444 /* InfoPlist.strings */,
+				5430666C19B98E3F00C3F444 /* IGYouTubeExtractorDemo-Info.plist */,
+				5430666D19B98E3F00C3F444 /* IGYouTubeExtractorDemo-Prefix.pch */,
+				5430666E19B98E3F00C3F444 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		90A6A05F190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests */ = {
+		90A6A05F190C3A6C0086D4CF /* IGYouTubeExtractorDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				90A6A065190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests.m */,
+				5430667519B98E5C00C3F444 /* IGYouTubeExtractorDemoTests.m */,
 				90A6A060190C3A6C0086D4CF /* Supporting Files */,
 			);
+			name = IGYouTubeExtractorDemoTests;
 			path = RMYouTubeExtractorDemoTests;
 			sourceTree = "<group>";
 		};
 		90A6A060190C3A6C0086D4CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				90A6A061190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests-Info.plist */,
-				90A6A062190C3A6C0086D4CF /* InfoPlist.strings */,
+				5430667B19B98E6F00C3F444 /* IGYouTubeExtractorDemoTests-Info.plist */,
+				5430667719B98E6400C3F444 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		90A6A06F190C3A800086D4CF /* RMYouTubeExtractor */ = {
+		90A6A06F190C3A800086D4CF /* IGYouTubeExtractor */ = {
 			isa = PBXGroup;
 			children = (
-				90A6A070190C3A800086D4CF /* RMYouTubeExtractor.h */,
-				90A6A071190C3A800086D4CF /* RMYouTubeExtractor.m */,
+				5430666119B98E1400C3F444 /* IGYouTubeExtractor.h */,
+				5430666219B98E1400C3F444 /* IGYouTubeExtractor.m */,
 			);
-			name = RMYouTubeExtractor;
+			name = IGYouTubeExtractor;
 			path = ../../RMYouTubeExtractor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		90A6A03C190C3A6C0086D4CF /* RMYouTubeExtractorDemo */ = {
+		90A6A03C190C3A6C0086D4CF /* IGYouTubeExtractorDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90A6A069190C3A6C0086D4CF /* Build configuration list for PBXNativeTarget "RMYouTubeExtractorDemo" */;
+			buildConfigurationList = 90A6A069190C3A6C0086D4CF /* Build configuration list for PBXNativeTarget "IGYouTubeExtractorDemo" */;
 			buildPhases = (
 				90A6A039190C3A6C0086D4CF /* Sources */,
 				90A6A03A190C3A6C0086D4CF /* Frameworks */,
@@ -178,14 +182,14 @@
 			);
 			dependencies = (
 			);
-			name = RMYouTubeExtractorDemo;
+			name = IGYouTubeExtractorDemo;
 			productName = RMYouTubeExtractorDemo;
-			productReference = 90A6A03D190C3A6C0086D4CF /* RMYouTubeExtractorDemo.app */;
+			productReference = 90A6A03D190C3A6C0086D4CF /* IGYouTubeExtractorDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		90A6A057190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests */ = {
+		90A6A057190C3A6C0086D4CF /* IGYouTubeExtractorDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90A6A06C190C3A6C0086D4CF /* Build configuration list for PBXNativeTarget "RMYouTubeExtractorDemoTests" */;
+			buildConfigurationList = 90A6A06C190C3A6C0086D4CF /* Build configuration list for PBXNativeTarget "IGYouTubeExtractorDemoTests" */;
 			buildPhases = (
 				90A6A054190C3A6C0086D4CF /* Sources */,
 				90A6A055190C3A6C0086D4CF /* Frameworks */,
@@ -196,9 +200,9 @@
 			dependencies = (
 				90A6A05E190C3A6C0086D4CF /* PBXTargetDependency */,
 			);
-			name = RMYouTubeExtractorDemoTests;
+			name = IGYouTubeExtractorDemoTests;
 			productName = RMYouTubeExtractorDemoTests;
-			productReference = 90A6A058190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests.xctest */;
+			productReference = 90A6A058190C3A6C0086D4CF /* IGYouTubeExtractorDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 90A6A038190C3A6C0086D4CF /* Build configuration list for PBXProject "RMYouTubeExtractorDemo" */;
+			buildConfigurationList = 90A6A038190C3A6C0086D4CF /* Build configuration list for PBXProject "IGYouTubeExtractorDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -228,8 +232,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				90A6A03C190C3A6C0086D4CF /* RMYouTubeExtractorDemo */,
-				90A6A057190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests */,
+				90A6A03C190C3A6C0086D4CF /* IGYouTubeExtractorDemo */,
+				90A6A057190C3A6C0086D4CF /* IGYouTubeExtractorDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,8 +243,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A6A04B190C3A6C0086D4CF /* InfoPlist.strings in Resources */,
-				90A6A053190C3A6C0086D4CF /* Images.xcassets in Resources */,
+				5430666B19B98E3100C3F444 /* Images.xcassets in Resources */,
+				5430667419B98E4C00C3F444 /* InfoPlist.strings in Resources */,
+				5430666F19B98E3F00C3F444 /* IGYouTubeExtractorDemo-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +253,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A6A064190C3A6C0086D4CF /* InfoPlist.strings in Resources */,
+				5430667C19B98E6F00C3F444 /* IGYouTubeExtractorDemoTests-Info.plist in Resources */,
+				5430667919B98E6400C3F444 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,10 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A6A04D190C3A6C0086D4CF /* main.m in Sources */,
-				90A6A051190C3A6C0086D4CF /* RMAppDelegate.m in Sources */,
-				90A6A075190C3ED10086D4CF /* RMYouTubeExtractorDemoTableViewController.m in Sources */,
-				90A6A072190C3A800086D4CF /* RMYouTubeExtractor.m in Sources */,
+				5430667019B98E3F00C3F444 /* main.m in Sources */,
+				5430666319B98E1400C3F444 /* IGYouTubeExtractor.m in Sources */,
+				5430666919B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.m in Sources */,
+				5430666819B98E2300C3F444 /* IGAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A6A066190C3A6C0086D4CF /* RMYouTubeExtractorDemoTests.m in Sources */,
+				5430667A19B98E6600C3F444 /* IGYouTubeExtractorDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,24 +285,24 @@
 /* Begin PBXTargetDependency section */
 		90A6A05E190C3A6C0086D4CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 90A6A03C190C3A6C0086D4CF /* RMYouTubeExtractorDemo */;
+			target = 90A6A03C190C3A6C0086D4CF /* IGYouTubeExtractorDemo */;
 			targetProxy = 90A6A05D190C3A6C0086D4CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		90A6A049190C3A6C0086D4CF /* InfoPlist.strings */ = {
+		5430667219B98E4C00C3F444 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				90A6A04A190C3A6C0086D4CF /* en */,
+				5430667319B98E4C00C3F444 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		90A6A062190C3A6C0086D4CF /* InfoPlist.strings */ = {
+		5430667719B98E6400C3F444 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				90A6A063190C3A6C0086D4CF /* en */,
+				5430667819B98E6400C3F444 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -380,9 +386,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RMYouTubeExtractorDemo/RMYouTubeExtractorDemo-Prefix.pch";
-				INFOPLIST_FILE = "RMYouTubeExtractorDemo/RMYouTubeExtractorDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IGYouTubeExtractorDemo/IGYouTubeExtractorDemo-Prefix.pch";
+				INFOPLIST_FILE = "IGYouTubeExtractorDemo/IGYouTubeExtractorDemo-Info.plist";
+				PRODUCT_NAME = IGYouTubeExtractorDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,9 +399,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RMYouTubeExtractorDemo/RMYouTubeExtractorDemo-Prefix.pch";
-				INFOPLIST_FILE = "RMYouTubeExtractorDemo/RMYouTubeExtractorDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IGYouTubeExtractorDemo/IGYouTubeExtractorDemo-Prefix.pch";
+				INFOPLIST_FILE = "IGYouTubeExtractorDemo/IGYouTubeExtractorDemo-Info.plist";
+				PRODUCT_NAME = IGYouTubeExtractorDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -403,20 +409,20 @@
 		90A6A06D190C3A6C0086D4CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RMYouTubeExtractorDemo.app/RMYouTubeExtractorDemo";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGYouTubeExtractorDemo.app/IGYouTubeExtractorDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RMYouTubeExtractorDemo/RMYouTubeExtractorDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "IGYouTubeExtractorDemo/IGYouTubeExtractorDemo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "RMYouTubeExtractorDemoTests/RMYouTubeExtractorDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "IGYouTubeExtractorDemoTests/IGYouTubeExtractorDemoTests-Info.plist";
+				PRODUCT_NAME = IGYouTubeExtractorDemoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -425,16 +431,16 @@
 		90A6A06E190C3A6C0086D4CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RMYouTubeExtractorDemo.app/RMYouTubeExtractorDemo";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGYouTubeExtractorDemo.app/IGYouTubeExtractorDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RMYouTubeExtractorDemo/RMYouTubeExtractorDemo-Prefix.pch";
-				INFOPLIST_FILE = "RMYouTubeExtractorDemoTests/RMYouTubeExtractorDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IGYouTubeExtractorDemo/IGYouTubeExtractorDemo-Prefix.pch";
+				INFOPLIST_FILE = "IGYouTubeExtractorDemoTests/IGYouTubeExtractorDemoTests-Info.plist";
+				PRODUCT_NAME = IGYouTubeExtractorDemoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -443,7 +449,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		90A6A038190C3A6C0086D4CF /* Build configuration list for PBXProject "RMYouTubeExtractorDemo" */ = {
+		90A6A038190C3A6C0086D4CF /* Build configuration list for PBXProject "IGYouTubeExtractorDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90A6A067190C3A6C0086D4CF /* Debug */,
@@ -452,21 +458,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90A6A069190C3A6C0086D4CF /* Build configuration list for PBXNativeTarget "RMYouTubeExtractorDemo" */ = {
+		90A6A069190C3A6C0086D4CF /* Build configuration list for PBXNativeTarget "IGYouTubeExtractorDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90A6A06A190C3A6C0086D4CF /* Debug */,
 				90A6A06B190C3A6C0086D4CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		90A6A06C190C3A6C0086D4CF /* Build configuration list for PBXNativeTarget "RMYouTubeExtractorDemoTests" */ = {
+		90A6A06C190C3A6C0086D4CF /* Build configuration list for PBXNativeTarget "IGYouTubeExtractorDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90A6A06D190C3A6C0086D4CF /* Debug */,
 				90A6A06E190C3A6C0086D4CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

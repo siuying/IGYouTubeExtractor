@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 The App Boutique. All rights reserved.
 //
 
-#import "RMAppDelegate.h"
+#import "IGAppDelegate.h"
 #import "RMYouTubeExtractorDemoTableViewController.h"
 
-@implementation RMAppDelegate
+@implementation IGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

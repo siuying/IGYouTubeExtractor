@@ -9,12 +9,12 @@
 //  https://github.com/0xced/XCDYouTubeVideoPlayerViewController
 //  by Cédric Luthi
 
-#import "RMYouTubeExtractor.h"
+#import "IGYouTubeExtractor.h"
 @import AVFoundation;
 
-@interface RMYouTubeExtractor ()
+@interface IGYouTubeExtractor ()
 
-@property (nonatomic, assign) RMYouTubeExtractorAttemptType attemptType;
+@property (nonatomic, assign) IGYouTubeExtractorAttemptType attemptType;
 
 @end
 
@@ -46,46 +46,46 @@ static NSString *ApplicationLanguageIdentifier(void)
 	return applicationLanguageIdentifier;
 }
 
-@implementation RMYouTubeExtractor
+@implementation IGYouTubeExtractor
 
-+ (RMYouTubeExtractor *)sharedInstance {
-    static RMYouTubeExtractor *_sharedInstance = nil;
++ (IGYouTubeExtractor *)sharedInstance {
+    static IGYouTubeExtractor *_sharedInstance = nil;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
-        _sharedInstance = [RMYouTubeExtractor new];
+        _sharedInstance = [IGYouTubeExtractor new];
     });
     return _sharedInstance;
 }
 
 -(NSArray*)preferredVideoQualities {
-    return @[ @(RMYouTubeExtractorVideoQualityHD1080), // unfortunately it doesn't look like 1080p is available and will most likely always return null
-              @(RMYouTubeExtractorVideoQualityHD720),
-              @(RMYouTubeExtractorVideoQualityMedium360),
-              @(RMYouTubeExtractorVideoQualitySmall240) ];
+    return @[ @(IGYouTubeExtractorVideoQualityHD1080), // unfortunately it doesn't look like 1080p is available and will most likely always return null
+              @(IGYouTubeExtractorVideoQualityHD720),
+              @(IGYouTubeExtractorVideoQualityMedium360),
+              @(IGYouTubeExtractorVideoQualitySmall240) ];
 }
 
 -(void)extractVideoForIdentifier:(NSString*)videoIdentifier completion:(void (^)(NSDictionary *videoDictionary, NSError *error))completion {
     if (videoIdentifier && [videoIdentifier length] > 0) {
-        if (self.attemptType == RMYouTubeExtractorAttemptTypeError) {
+        if (self.attemptType == IGYouTubeExtractorAttemptTypeError) {
             NSError *error = [NSError errorWithDomain:@"com.theappboutique.rmyoutubeextractor" code:404 userInfo:@{ NSLocalizedFailureReasonErrorKey : @"Unable to find playable content" }];
             dispatch_async(dispatch_get_main_queue(), ^{
                 completion(nil, error);
             });
-            self.attemptType = RMYouTubeExtractorAttemptTypeEmbedded;
+            self.attemptType = IGYouTubeExtractorAttemptTypeEmbedded;
             return;
         }
         NSMutableDictionary *parameters = [@{} mutableCopy];
         switch (self.attemptType) {
-            case RMYouTubeExtractorAttemptTypeEmbedded:
+            case IGYouTubeExtractorAttemptTypeEmbedded:
                 parameters[@"el"] = @"embedded";
                 break;
-            case RMYouTubeExtractorAttemptTypeDetailPage:
+            case IGYouTubeExtractorAttemptTypeDetailPage:
                 parameters[@"el"] = @"detailpage";
                 break;
-            case RMYouTubeExtractorAttemptTypeVevo:
+            case IGYouTubeExtractorAttemptTypeVevo:
                 parameters[@"el"] = @"vevo";
                 break;
-            case RMYouTubeExtractorAttemptTypeBlank:
+            case IGYouTubeExtractorAttemptTypeBlank:
                 parameters[@"el"] = @"";
                 break;
             default:

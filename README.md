@@ -1,6 +1,8 @@
-# RMYouTubeExtractor
+# IGYouTubeExtractor
 
-`RMYouTubeExtractor` provides an easy way to obtain MP4 URLs for your iOS apps by providing a YouTube video identifier.
+IGYouTubeExtractor is a fork of RMYouTubeExtractor.
+
+`IGYouTubeExtractor` provides an easy way to obtain MP4 URLs for your iOS apps by providing a YouTube video identifier.
 
 This library borrows code from [XCDYouTubeVideoPlayerViewController] by [Cédric Luthi] - sans the MPMoviePlayerController, allowing you to just extract the URLs and roll your own player. 
 

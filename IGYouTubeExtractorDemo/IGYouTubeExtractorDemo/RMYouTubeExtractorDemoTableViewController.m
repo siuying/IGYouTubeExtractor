@@ -7,7 +7,7 @@
 //
 
 #import "RMYouTubeExtractorDemoTableViewController.h"
-#import "RMYouTubeExtractor.h"
+#import "IGYouTubeExtractor.h"
 @import MediaPlayer;
 
 @interface RMYouTubeExtractorDemoTableViewController ()
@@ -45,7 +45,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
     self.videoArray = [[NSArray alloc] init];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
     
-    [[RMYouTubeExtractor sharedInstance] extractVideoForIdentifier:@"MVt32qoyhi0"
+    [[IGYouTubeExtractor sharedInstance] extractVideoForIdentifier:@"MVt32qoyhi0"
                                                         completion:^(NSDictionary *videoDictionary, NSError *error) {
                                                             if (!error) {
                                                                 NSMutableArray *mutableArray = [NSMutableArray arrayWithCapacity:[[videoDictionary allKeys] count]];
@@ -103,16 +103,16 @@ static NSString *CellIdentifier = @"CellIdentifier";
 
 -(NSString*)qualityStringForQuality:(NSNumber*)quality {
     switch ([quality longValue]) {
-        case RMYouTubeExtractorVideoQualitySmall240:
+        case IGYouTubeExtractorVideoQualitySmall240:
             return @"Small 240p";
             break;
-        case RMYouTubeExtractorVideoQualityMedium360:
+        case IGYouTubeExtractorVideoQualityMedium360:
             return @"Medium 360p";
             break;
-        case RMYouTubeExtractorVideoQualityHD720:
+        case IGYouTubeExtractorVideoQualityHD720:
             return @"HD 720p";
             break;
-        case RMYouTubeExtractorVideoQualityHD1080:
+        case IGYouTubeExtractorVideoQualityHD1080:
             return @"HD 1080p";
             break;
         default:
