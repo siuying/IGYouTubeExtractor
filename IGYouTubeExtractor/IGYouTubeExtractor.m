@@ -10,6 +10,8 @@
 //  by Cédric Luthi
 
 #import "IGYouTubeExtractor.h"
+#import "IGYouTubeVideo.h"
+
 @import AVFoundation;
 
 @interface IGYouTubeExtractor ()
@@ -64,7 +66,7 @@ static NSString *ApplicationLanguageIdentifier(void)
               @(IGYouTubeExtractorVideoQualitySmall240) ];
 }
 
--(void)extractVideoForIdentifier:(NSString*)videoIdentifier completion:(void (^)(NSDictionary *videoDictionary, NSError *error))completion {
+-(void)extractVideoForIdentifier:(NSString*)videoIdentifier completion:(void (^)(NSArray *videos, NSError *error))completion {
     if (videoIdentifier && [videoIdentifier length] > 0) {
         if (self.attemptType == IGYouTubeExtractorAttemptTypeError) {
             NSError *error = [NSError errorWithDomain:@"com.theappboutique.rmyoutubeextractor" code:404 userInfo:@{ NSLocalizedFailureReasonErrorKey : @"Unable to find playable content" }];
@@ -109,7 +111,7 @@ static NSString *ApplicationLanguageIdentifier(void)
                        NSMutableArray *streamQueries = [[video[@"url_encoded_fmt_stream_map"] componentsSeparatedByString:@","] mutableCopy];
                        [streamQueries addObjectsFromArray:[video[@"adaptive_fmts"] componentsSeparatedByString:@","]];
                        
-                       NSMutableDictionary *streamURLs = [NSMutableDictionary new];
+                       NSMutableDictionary *streamVideos = [NSMutableDictionary new];
                        for (NSString *streamQuery in streamQueries) {
                            NSDictionary *stream = DictionaryWithQueryString(streamQuery, queryEncoding);
                            NSString *type = stream[@"type"];
@@ -121,19 +123,22 @@ static NSString *ApplicationLanguageIdentifier(void)
                                    streamURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@&signature=%@", urlString, signature]];
                                }
                                if ([[DictionaryWithQueryString(streamURL.query, queryEncoding) allKeys] containsObject:@"signature"]) {
-                                   streamURLs[@([stream[@"itag"] integerValue])] = streamURL;
+                                   IGYouTubeVideo* video = [IGYouTubeVideo new];
+                                   video.videoURL = streamURL;
+                                   video.quality = stream[@"itag"] ? [stream[@"itag"] integerValue] : IGYouTubeExtractorVideoQualityUnknown;
+                                   streamVideos[@([stream[@"itag"] integerValue])] = video;
                                }
                            }
                        }
                        
                        BOOL contentIsAvailable = NO;
                        
-                       NSMutableDictionary *videoDictionary = [@{} mutableCopy];
+                       NSMutableArray* videos = [NSMutableArray array];
                        for (NSNumber *videoQuality in [self preferredVideoQualities]) {
-                           videoDictionary[videoQuality] = [NSNull null];
-                           NSURL *streamURL = streamURLs[videoQuality];
+                           IGYouTubeVideo *video = streamVideos[videoQuality];
+                           NSURL *streamURL = video.videoURL;
                            if (streamURL) {
-                               videoDictionary[videoQuality] = streamURL;
+                               [videos addObject:video];
                                contentIsAvailable = YES;
                            }
                        }
@@ -144,7 +149,7 @@ static NSString *ApplicationLanguageIdentifier(void)
                            [self extractVideoForIdentifier:videoIdentifier completion:completion];
                        } else {
                            dispatch_async(dispatch_get_main_queue(), ^{
-                               completion(videoDictionary, nil);
+                               completion(videos, nil);
                            });
                        }
                        

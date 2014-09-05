@@ -8,6 +8,8 @@
 
 #import "RMYouTubeExtractorDemoTableViewController.h"
 #import "IGYouTubeExtractor.h"
+#import "IGYouTubeVideo.h"
+
 @import MediaPlayer;
 
 @interface RMYouTubeExtractorDemoTableViewController ()
@@ -46,15 +48,9 @@ static NSString *CellIdentifier = @"CellIdentifier";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
     
     [[IGYouTubeExtractor sharedInstance] extractVideoForIdentifier:@"MVt32qoyhi0"
-                                                        completion:^(NSDictionary *videoDictionary, NSError *error) {
+                                                        completion:^(NSArray *videos, NSError *error) {
                                                             if (!error) {
-                                                                NSMutableArray *mutableArray = [NSMutableArray arrayWithCapacity:[[videoDictionary allKeys] count]];
-                                                                for (NSString *key in videoDictionary) {
-                                                                    if (videoDictionary[key] != [NSNull null]) {
-                                                                        [mutableArray addObject:@{ @"quality" : key, @"url" : videoDictionary[key] }];
-                                                                    }
-                                                                }
-                                                                self.videoArray = [mutableArray copy];
+                                                                self.videoArray = [videos copy];
                                                                 [self.tableView reloadData];
                                                             } else {
                                                                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"An Error Occurred"
@@ -88,21 +84,22 @@ static NSString *CellIdentifier = @"CellIdentifier";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    NSNumber *quality = self.videoArray[indexPath.row][@"quality"];
-    [cell.textLabel setText:[self qualityStringForQuality:quality]];
+
+    IGYouTubeVideo* video = self.videoArray[indexPath.row];
+    [cell.textLabel setText:[self qualityStringForQuality:video.quality]];
     
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    IGYouTubeVideo* video = self.videoArray[indexPath.row];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self.moviePlayerController setContentURL:self.videoArray[indexPath.row][@"url"]];
+    [self.moviePlayerController setContentURL:video.videoURL];
     [self.moviePlayerController play];
 }
 
--(NSString*)qualityStringForQuality:(NSNumber*)quality {
-    switch ([quality longValue]) {
+-(NSString*)qualityStringForQuality:(IGYouTubeExtractorVideoQuality)quality {
+    switch (quality) {
         case IGYouTubeExtractorVideoQualitySmall240:
             return @"Small 240p";
             break;

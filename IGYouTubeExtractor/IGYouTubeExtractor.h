@@ -15,6 +15,7 @@ typedef NS_ENUM (NSUInteger, IGYouTubeExtractorAttemptType) {
 };
 
 typedef NS_ENUM (NSUInteger, IGYouTubeExtractorVideoQuality) {
+    IGYouTubeExtractorVideoQualityUnknown   = 0,
 	IGYouTubeExtractorVideoQualitySmall240  = 36,
 	IGYouTubeExtractorVideoQualityMedium360 = 18,
 	IGYouTubeExtractorVideoQualityHD720     = 22,
@@ -25,7 +26,7 @@ typedef NS_ENUM (NSUInteger, IGYouTubeExtractorVideoQuality) {
 
 +(IGYouTubeExtractor*)sharedInstance;
 
--(void)extractVideoForIdentifier:(NSString*)videoIdentifier completion:(void (^)(NSDictionary *videoDictionary, NSError *error))completion;
+-(void)extractVideoForIdentifier:(NSString*)videoIdentifier completion:(void (^)(NSArray *videos, NSError *error))completion;
 
 -(NSArray*)preferredVideoQualities;
 
