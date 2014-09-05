@@ -6,6 +6,6 @@
 //  Copyright (c) 2014 The App Boutique. All rights reserved.
 //
 
-@interface RMYouTubeExtractorDemoTableViewController : UITableViewController
+@interface IGYouTubeExtractorDemoTableViewController : UITableViewController
 
 @end

@@ -1,10 +1,12 @@
 //
-//  RMYouTubeExtractor.h
-//  RMYouTubeExtractor
+//  IGYouTubeExtractor.h
+//  IGYouTubeExtractor
 //
-//  Created by Rune Madsen on 2014-04-26.
-//  Copyright (c) 2014 The App Boutique. All rights reserved.
+//  Created by Francis Chong.
+//  Copyright (c) 2014 Ignition Soft. All rights reserved.
 //
+
+extern NSString* const IGYouTubeExtractorErrorDomain;
 
 typedef NS_ENUM (NSUInteger, IGYouTubeExtractorAttemptType) {
 	IGYouTubeExtractorAttemptTypeEmbedded = 0,
@@ -21,6 +23,13 @@ typedef NS_ENUM (NSUInteger, IGYouTubeExtractorVideoQuality) {
 	IGYouTubeExtractorVideoQualityHD720     = 22,
 	IGYouTubeExtractorVideoQualityHD1080    = 37,
 };
+
+@interface IGYouTubeVideo : NSObject
+@property (nonatomic, copy) NSString* title;
+@property (nonatomic, strong) NSURL* videoURL;
+@property (nonatomic, strong) NSURL* thumbnailURL;
+@property (nonatomic, assign) IGYouTubeExtractorVideoQuality quality;
+@end
 
 @interface IGYouTubeExtractor : NSObject
 

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5430666819B98E2300C3F444 /* IGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5430666519B98E2300C3F444 /* IGAppDelegate.m */; };
-		5430666919B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5430666719B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.m */; };
+		5430666919B98E2300C3F444 /* IGYouTubeExtractorDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5430666719B98E2300C3F444 /* IGYouTubeExtractorDemoTableViewController.m */; };
 		5430666B19B98E3100C3F444 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5430666A19B98E3100C3F444 /* Images.xcassets */; };
 		5430666F19B98E3F00C3F444 /* IGYouTubeExtractorDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5430666C19B98E3F00C3F444 /* IGYouTubeExtractorDemo-Info.plist */; };
 		5430667019B98E3F00C3F444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5430666E19B98E3F00C3F444 /* main.m */; };
@@ -16,8 +16,7 @@
 		5430667919B98E6400C3F444 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5430667719B98E6400C3F444 /* InfoPlist.strings */; };
 		5430667A19B98E6600C3F444 /* IGYouTubeExtractorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5430667519B98E5C00C3F444 /* IGYouTubeExtractorDemoTests.m */; };
 		5430667C19B98E6F00C3F444 /* IGYouTubeExtractorDemoTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5430667B19B98E6F00C3F444 /* IGYouTubeExtractorDemoTests-Info.plist */; };
-		5447605219B997C4003C7294 /* IGYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447604F19B997C4003C7294 /* IGYouTubeExtractor.m */; };
-		5447605319B997C4003C7294 /* IGYouTubeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447605119B997C4003C7294 /* IGYouTubeVideo.m */; };
+		54D232F019B99819009DA47C /* IGYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D232ED19B99819009DA47C /* IGYouTubeExtractor.m */; };
 		90A6A041190C3A6C0086D4CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6A040190C3A6C0086D4CF /* Foundation.framework */; };
 		90A6A043190C3A6C0086D4CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6A042190C3A6C0086D4CF /* CoreGraphics.framework */; };
 		90A6A045190C3A6C0086D4CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A6A044190C3A6C0086D4CF /* UIKit.framework */; };
@@ -39,8 +38,8 @@
 /* Begin PBXFileReference section */
 		5430666419B98E2300C3F444 /* IGAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGAppDelegate.h; path = IGYouTubeExtractorDemo/IGAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		5430666519B98E2300C3F444 /* IGAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGAppDelegate.m; path = IGYouTubeExtractorDemo/IGAppDelegate.m; sourceTree = SOURCE_ROOT; };
-		5430666619B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMYouTubeExtractorDemoTableViewController.h; path = IGYouTubeExtractorDemo/RMYouTubeExtractorDemoTableViewController.h; sourceTree = SOURCE_ROOT; };
-		5430666719B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMYouTubeExtractorDemoTableViewController.m; path = IGYouTubeExtractorDemo/RMYouTubeExtractorDemoTableViewController.m; sourceTree = SOURCE_ROOT; };
+		5430666619B98E2300C3F444 /* IGYouTubeExtractorDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGYouTubeExtractorDemoTableViewController.h; path = IGYouTubeExtractorDemo/IGYouTubeExtractorDemoTableViewController.h; sourceTree = SOURCE_ROOT; };
+		5430666719B98E2300C3F444 /* IGYouTubeExtractorDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGYouTubeExtractorDemoTableViewController.m; path = IGYouTubeExtractorDemo/IGYouTubeExtractorDemoTableViewController.m; sourceTree = SOURCE_ROOT; };
 		5430666A19B98E3100C3F444 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IGYouTubeExtractorDemo/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		5430666C19B98E3F00C3F444 /* IGYouTubeExtractorDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "IGYouTubeExtractorDemo-Info.plist"; path = "IGYouTubeExtractorDemo/IGYouTubeExtractorDemo-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5430666D19B98E3F00C3F444 /* IGYouTubeExtractorDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IGYouTubeExtractorDemo-Prefix.pch"; path = "IGYouTubeExtractorDemo/IGYouTubeExtractorDemo-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -49,10 +48,8 @@
 		5430667519B98E5C00C3F444 /* IGYouTubeExtractorDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGYouTubeExtractorDemoTests.m; path = IGYouTubeExtractorDemoTests/IGYouTubeExtractorDemoTests.m; sourceTree = SOURCE_ROOT; };
 		5430667819B98E6400C3F444 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = IGYouTubeExtractorDemoTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		5430667B19B98E6F00C3F444 /* IGYouTubeExtractorDemoTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "IGYouTubeExtractorDemoTests-Info.plist"; path = "IGYouTubeExtractorDemoTests/IGYouTubeExtractorDemoTests-Info.plist"; sourceTree = SOURCE_ROOT; };
-		5447604E19B997C4003C7294 /* IGYouTubeExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGYouTubeExtractor.h; path = ../IGYouTubeExtractor/IGYouTubeExtractor.h; sourceTree = "<group>"; };
-		5447604F19B997C4003C7294 /* IGYouTubeExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGYouTubeExtractor.m; path = ../IGYouTubeExtractor/IGYouTubeExtractor.m; sourceTree = "<group>"; };
-		5447605019B997C4003C7294 /* IGYouTubeVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGYouTubeVideo.h; path = ../IGYouTubeExtractor/IGYouTubeVideo.h; sourceTree = "<group>"; };
-		5447605119B997C4003C7294 /* IGYouTubeVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGYouTubeVideo.m; path = ../IGYouTubeExtractor/IGYouTubeVideo.m; sourceTree = "<group>"; };
+		54D232EC19B99819009DA47C /* IGYouTubeExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGYouTubeExtractor.h; path = ../IGYouTubeExtractor/IGYouTubeExtractor.h; sourceTree = SOURCE_ROOT; };
+		54D232ED19B99819009DA47C /* IGYouTubeExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGYouTubeExtractor.m; path = ../IGYouTubeExtractor/IGYouTubeExtractor.m; sourceTree = SOURCE_ROOT; };
 		90A6A03D190C3A6C0086D4CF /* IGYouTubeExtractorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGYouTubeExtractorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A6A040190C3A6C0086D4CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90A6A042190C3A6C0086D4CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,8 +118,8 @@
 				90A6A06F190C3A800086D4CF /* IGYouTubeExtractor */,
 				5430666419B98E2300C3F444 /* IGAppDelegate.h */,
 				5430666519B98E2300C3F444 /* IGAppDelegate.m */,
-				5430666619B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.h */,
-				5430666719B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.m */,
+				5430666619B98E2300C3F444 /* IGYouTubeExtractorDemoTableViewController.h */,
+				5430666719B98E2300C3F444 /* IGYouTubeExtractorDemoTableViewController.m */,
 				5430666A19B98E3100C3F444 /* Images.xcassets */,
 				90A6A047190C3A6C0086D4CF /* Supporting Files */,
 			);
@@ -163,10 +160,8 @@
 		90A6A06F190C3A800086D4CF /* IGYouTubeExtractor */ = {
 			isa = PBXGroup;
 			children = (
-				5447604E19B997C4003C7294 /* IGYouTubeExtractor.h */,
-				5447604F19B997C4003C7294 /* IGYouTubeExtractor.m */,
-				5447605019B997C4003C7294 /* IGYouTubeVideo.h */,
-				5447605119B997C4003C7294 /* IGYouTubeVideo.m */,
+				54D232EC19B99819009DA47C /* IGYouTubeExtractor.h */,
+				54D232ED19B99819009DA47C /* IGYouTubeExtractor.m */,
 			);
 			name = IGYouTubeExtractor;
 			path = ../../RMYouTubeExtractor;
@@ -270,11 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5447605219B997C4003C7294 /* IGYouTubeExtractor.m in Sources */,
+				54D232F019B99819009DA47C /* IGYouTubeExtractor.m in Sources */,
 				5430667019B98E3F00C3F444 /* main.m in Sources */,
-				5430666919B98E2300C3F444 /* RMYouTubeExtractorDemoTableViewController.m in Sources */,
+				5430666919B98E2300C3F444 /* IGYouTubeExtractorDemoTableViewController.m in Sources */,
 				5430666819B98E2300C3F444 /* IGAppDelegate.m in Sources */,
-				5447605319B997C4003C7294 /* IGYouTubeVideo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

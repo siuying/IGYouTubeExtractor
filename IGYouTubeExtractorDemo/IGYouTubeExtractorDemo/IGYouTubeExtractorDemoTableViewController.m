@@ -6,20 +6,20 @@
 //  Copyright (c) 2014 The App Boutique. All rights reserved.
 //
 
-#import "RMYouTubeExtractorDemoTableViewController.h"
+#import "IGYouTubeExtractorDemoTableViewController.h"
 #import "IGYouTubeExtractor.h"
 #import "IGYouTubeVideo.h"
 
 @import MediaPlayer;
 
-@interface RMYouTubeExtractorDemoTableViewController ()
+@interface IGYouTubeExtractorDemoTableViewController ()
 
 @property (nonatomic, strong) NSArray *videoArray;
 @property (nonatomic, strong) MPMoviePlayerController *moviePlayerController;
 
 @end
 
-@implementation RMYouTubeExtractorDemoTableViewController
+@implementation IGYouTubeExtractorDemoTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {

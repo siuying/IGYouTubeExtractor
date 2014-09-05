@@ -7,7 +7,7 @@
 //
 
 #import "IGAppDelegate.h"
-#import "RMYouTubeExtractorDemoTableViewController.h"
+#import "IGYouTubeExtractorDemoTableViewController.h"
 
 @implementation IGAppDelegate
 
@@ -17,7 +17,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    RMYouTubeExtractorDemoTableViewController *youTubeExtractorDemoTableViewController = [[RMYouTubeExtractorDemoTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    IGYouTubeExtractorDemoTableViewController *youTubeExtractorDemoTableViewController = [[IGYouTubeExtractorDemoTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:youTubeExtractorDemoTableViewController];
     self.window.rootViewController = navigationController;
     

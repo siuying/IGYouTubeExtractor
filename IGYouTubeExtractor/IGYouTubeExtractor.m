@@ -1,8 +1,11 @@
 //
-//  RMYouTubeExtractor.,
-//  RMYouTubeExtractor
+//  IGYouTubeExtractor.m
+//  IGYouTubeExtractor
 //
-//  Created by Rune Madsen on 2014-04-26.
+//  Created by Francis Chong.
+//  Copyright (c) 2014 Ignition Soft. All rights reserved.
+//
+//  Included source code from Rune Madsen on 2014-04-26.
 //  Copyright (c) 2014 The App Boutique. All rights reserved.
 //
 //  Extraction code inspired by XCDYouTubeVideoPlayerViewController
@@ -10,9 +13,13 @@
 //  by Cédric Luthi
 
 #import "IGYouTubeExtractor.h"
-#import "IGYouTubeVideo.h"
 
 @import AVFoundation;
+
+NSString* const IGYouTubeExtractorErrorDomain = @"IGYouTubeExtractor";
+
+@implementation IGYouTubeVideo
+@end
 
 @interface IGYouTubeExtractor ()
 
@@ -69,7 +76,7 @@ static NSString *ApplicationLanguageIdentifier(void)
 -(void)extractVideoForIdentifier:(NSString*)videoIdentifier completion:(void (^)(NSArray *videos, NSError *error))completion {
     if (videoIdentifier && [videoIdentifier length] > 0) {
         if (self.attemptType == IGYouTubeExtractorAttemptTypeError) {
-            NSError *error = [NSError errorWithDomain:@"com.theappboutique.rmyoutubeextractor" code:404 userInfo:@{ NSLocalizedFailureReasonErrorKey : @"Unable to find playable content" }];
+            NSError *error = [NSError errorWithDomain:IGYouTubeExtractorErrorDomain code:404 userInfo:@{ NSLocalizedFailureReasonErrorKey : @"Unable to find playable content" }];
             dispatch_async(dispatch_get_main_queue(), ^{
                 completion(nil, error);
             });
@@ -108,6 +115,10 @@ static NSString *ApplicationLanguageIdentifier(void)
                        NSString *videoQuery = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
                        NSStringEncoding queryEncoding = NSUTF8StringEncoding;
                        NSDictionary *video = DictionaryWithQueryString(videoQuery, queryEncoding);
+                       NSString* title = video[@"title"];
+                       NSString* thumbnailURLString =  video[@"irul"] ?: video[@"irulhq"] ?: video[@"iurlmq"] ?: video[@"iurlsq"];
+                       NSURL* thumbnailURL = [NSURL URLWithString:thumbnailURLString];
+
                        NSMutableArray *streamQueries = [[video[@"url_encoded_fmt_stream_map"] componentsSeparatedByString:@","] mutableCopy];
                        [streamQueries addObjectsFromArray:[video[@"adaptive_fmts"] componentsSeparatedByString:@","]];
                        
@@ -125,7 +136,9 @@ static NSString *ApplicationLanguageIdentifier(void)
                                if ([[DictionaryWithQueryString(streamURL.query, queryEncoding) allKeys] containsObject:@"signature"]) {
                                    IGYouTubeVideo* video = [IGYouTubeVideo new];
                                    video.videoURL = streamURL;
+                                   video.thumbnailURL = thumbnailURL;
                                    video.quality = stream[@"itag"] ? [stream[@"itag"] integerValue] : IGYouTubeExtractorVideoQualityUnknown;
+                                   video.title = title;
                                    streamVideos[@([stream[@"itag"] integerValue])] = video;
                                }
                            }
@@ -138,7 +151,7 @@ static NSString *ApplicationLanguageIdentifier(void)
                            IGYouTubeVideo *video = streamVideos[videoQuality];
                            NSURL *streamURL = video.videoURL;
                            if (streamURL) {
-                               [videos addObject:video];
+                               [videos insertObject:video atIndex:0];
                                contentIsAvailable = YES;
                            }
                        }
@@ -161,7 +174,7 @@ static NSString *ApplicationLanguageIdentifier(void)
                }
          ] resume];
     } else {
-        NSError *error = [NSError errorWithDomain:@"com.theappboutique.rmyoutubeextractor" code:400 userInfo:@{ NSLocalizedFailureReasonErrorKey : @"Invalid or missing YouTube video identifier" }];
+        NSError *error = [NSError errorWithDomain:IGYouTubeExtractorErrorDomain code:400 userInfo:@{ NSLocalizedFailureReasonErrorKey : @"Invalid or missing YouTube video identifier" }];
         completion(nil, error);
     }
 }
