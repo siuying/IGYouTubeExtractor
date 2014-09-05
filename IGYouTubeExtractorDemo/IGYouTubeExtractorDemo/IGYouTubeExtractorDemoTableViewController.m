@@ -8,7 +8,6 @@
 
 #import "IGYouTubeExtractorDemoTableViewController.h"
 #import "IGYouTubeExtractor.h"
-#import "IGYouTubeVideo.h"
 
 @import MediaPlayer;
 

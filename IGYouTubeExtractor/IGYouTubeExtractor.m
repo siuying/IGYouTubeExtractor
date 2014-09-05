@@ -151,7 +151,7 @@ static NSString *ApplicationLanguageIdentifier(void)
                            IGYouTubeVideo *video = streamVideos[videoQuality];
                            NSURL *streamURL = video.videoURL;
                            if (streamURL) {
-                               [videos insertObject:video atIndex:0];
+                               [videos addObject:video];
                                contentIsAvailable = YES;
                            }
                        }
