@@ -1,8 +1,6 @@
 # IGYouTubeExtractor
 
-IGYouTubeExtractor is a fork of RMYouTubeExtractor.
-
-`IGYouTubeExtractor` provides an easy way to obtain MP4 URLs for your iOS apps by providing a YouTube video identifier.
+IGYouTubeExtractor is a fork of [RMYouTubeExtractor] that extract MP4 URLs and metadata from a YouTube video identifier.
 
 This library borrows code from [XCDYouTubeVideoPlayerViewController] by [Cédric Luthi] - sans the MPMoviePlayerController, allowing you to just extract the URLs and roll your own player. 
 
@@ -27,14 +25,14 @@ $ pod install
 
 ### Submodule / manually
 
-1. Add `RMYouTubeExtractor.h` and `RMYouTubeExtractor.m` to your project
+1. Add `IGYouTubeExtractor.h` and `IGYouTubeExtractor.m` to your project
 2. `@import AVFoundation;`
 
 ### Usage
 
 ```objc
-[[RMYouTubeExtractor sharedInstance] extractVideoForIdentifier:youtubeID
-                                                    completion:^(NSDictionary *videoDictionary, NSError *error) {
+[[IGYouTubeExtractor sharedInstance] extractVideoForIdentifier:youtubeID
+                                                    completion:^(NSArray *videos, NSError *error) {
                                                         }];
 ```
 
@@ -60,8 +58,9 @@ I'd love to see and hear from you if you use it in a project.
 
 ## License
 
-RMYouTubeExtractor is available under the MIT license. See the LICENSE file for more information.
+IGYouTubeExtractor is available under the MIT license. See the LICENSE file for more information.
 
+[RMYouTubeExtractor]: https://github.com/runmad/RMYouTubeExtractor
 [XCDYouTubeVideoPlayerViewController]: https://github.com/0xced/XCDYouTubeVideoPlayerViewController
 [@runmad]: http://www.twitter.com/runmad
 [runmad.com]: http://www.runmad.com

@@ -35,6 +35,12 @@ typedef NS_ENUM (NSUInteger, IGYouTubeExtractorVideoQuality) {
 
 +(IGYouTubeExtractor*)sharedInstance;
 
+/**
+ * @param videoIdentifier a YouTube video identifier
+ * @param completion a block called on completed extraction, with following parameters: 
+ *   - [NSArray<IGYouTubeVideo>] videos set of videos object
+ *   - [NSError] error the error object, if any error occurred
+ */
 -(void)extractVideoForIdentifier:(NSString*)videoIdentifier completion:(void (^)(NSArray *videos, NSError *error))completion;
 
 -(NSArray*)preferredVideoQualities;
