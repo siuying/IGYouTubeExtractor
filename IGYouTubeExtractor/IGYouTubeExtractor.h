@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Ignition Soft. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 extern NSString* const IGYouTubeExtractorErrorDomain;
 
 typedef NS_ENUM (NSUInteger, IGYouTubeExtractorAttemptType) {

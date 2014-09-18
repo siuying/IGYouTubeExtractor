@@ -13,6 +13,8 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   s.platform     = :ios, '7.0'
+  s.platform     = :osx, '10.9'
+
   s.source_files = 'IGYouTubeExtractor'
   s.frameworks   = 'AVFoundation'
   s.requires_arc = true

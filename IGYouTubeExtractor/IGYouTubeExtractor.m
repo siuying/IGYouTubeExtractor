@@ -19,6 +19,11 @@
 NSString* const IGYouTubeExtractorErrorDomain = @"IGYouTubeExtractor";
 
 @implementation IGYouTubeVideo
+
+-(NSString*) description
+{
+    return [NSString stringWithFormat:@"<IGYouTubeVideo title=%@, URL=%@>", self.title, self.videoURL];
+}
 @end
 
 @interface IGYouTubeExtractor ()
