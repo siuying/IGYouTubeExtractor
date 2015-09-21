@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'IGYouTubeExtractor'
-  s.version      = '0.4.1'
+  s.version      = '0.5.0'
   s.summary      = 'IGYouTubeExtractor provides an easy way to obtain MP4 URLs and metadata for your iOS apps by providing a YouTube video identifier.'
   s.homepage     = 'https://github.com/siuying/IGYouTubeExtractor'
   s.author       = { 

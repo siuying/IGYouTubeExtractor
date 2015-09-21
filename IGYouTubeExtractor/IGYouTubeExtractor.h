@@ -43,8 +43,6 @@ typedef NS_ENUM (NSUInteger, IGYouTubeExtractorVideoQuality) {
  *   - [NSArray<IGYouTubeVideo>] videos set of videos object
  *   - [NSError] error the error object, if any error occurred
  */
--(void)extractVideoForIdentifier:(NSString*)videoIdentifier completion:(void (^)(NSArray *videos, NSError *error))completion;
-
--(NSArray*)preferredVideoQualities;
+-(void)extractVideoForIdentifier:(NSString*)videoIdentifier completion:(void (^)(NSArray<IGYouTubeVideo*> *videos, NSError *error))completion;
 
 @end

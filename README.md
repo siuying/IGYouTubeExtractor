@@ -14,7 +14,7 @@ This library borrows code from [XCDYouTubeVideoPlayerViewController] by [Cédric
 ### CocoaPods
 
 ````
-pod “RMYouTubeExtractor”
+pod “IGYouTubeExtractor”
 ````
 
 then

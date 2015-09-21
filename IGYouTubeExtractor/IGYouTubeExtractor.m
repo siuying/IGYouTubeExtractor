@@ -78,7 +78,7 @@ static NSString *ApplicationLanguageIdentifier(void)
               @(IGYouTubeExtractorVideoQualitySmall240) ];
 }
 
--(void)extractVideoForIdentifier:(NSString*)videoIdentifier completion:(void (^)(NSArray *videos, NSError *error))completion {
+-(void)extractVideoForIdentifier:(NSString*)videoIdentifier completion:(void (^)(NSArray<IGYouTubeVideo*> *videos, NSError *error))completion {
     if (videoIdentifier && [videoIdentifier length] > 0) {
         if (self.attemptType == IGYouTubeExtractorAttemptTypeError) {
             NSError *error = [NSError errorWithDomain:IGYouTubeExtractorErrorDomain code:404 userInfo:@{ NSLocalizedFailureReasonErrorKey : @"Unable to find playable content" }];
